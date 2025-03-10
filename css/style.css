@@ -1,162 +1,159 @@
-p, li {
-    font-size: 20px;
-    margin: 15px;
-    padding-right: 10px;
-    padding-left: 10px;
-    font-family: 'Sans serif';
+html {
+    scroll-behavior: smooth;
 }
 
 *:focus {
     border: 2px solid;
 }
 
+main ul {
+    list-style: square;
+    margin-left: 30px;
+}
 a:link, a:visited, a:hover, a:active{
-    font-size: 20px;
+    color: #00274C;
+}
+
+header a:link, header a:visited, header a:hover, header a:active{
     color: white;
-    text-align: center;
+}
+footer a:link, footer a:visited, footer a:hover, footer a:active{
+    color: white;
+}
+
+*{
+    font-family: "IBM Plex Sans", sans-serif;
 }
 
 a {
+    font-size: 20px;
+    text-align: center;
+}
+
+header a {
     text-decoration: none;
 }
-
-.selected {
+header .selected {
     text-decoration: underline;
 }
-
 .skip a {
     position: relative;
     top: -100px
 }
-
 .skip a:focus {
     top: 0px;
 }
-
 .container {
     display: grid;
     color: #00274C;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 6fr 1fr;
 
     align-items: center;
     justify-content: center;
     row-gap: 20px;
 }
-
 .imgbox{
     grid-column-start: 1;
-    grid-column-end: 3;
-    z-index: 0;
-
+    grid-column-end: 4;
     max-height: 600px;
+    z-index: 0;
     overflow: hidden;
 }
-
 .textbox {
     background-color: rgba(255, 255, 255, .8);
     grid-column-start: 2;
     grid-column-end: 2;
-    border: 5px solid #00274C;
+    border: 8px solid #00274C;
+    max-height: 400px;
     z-index: 1;
 
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
-    overflow: hidden;
-    margin: auto;
     overflow: scroll;
-    max-height: 400px;
+    margin: auto;
+}
+
+p, li {
+    font-size: 20px;
+    padding: 15px;
+    padding-top: 0px;
+}
+
+.textbox li {
+    text-align: left;
 }
 
 header {
     background-color: #00274C;
     text-decoration-color: #FFCB05;
+    font-family: "IBM Plex Sans", sans-serif;
     color: #FFCB05;
     padding: 25px;
     margin: 0px;
     border: 0px;
 }
-
 h1, h2 {
     font-size: 24px;
-    margin-top: 25px;
+    padding: 20px;
     font-weight: bold;
     text-align: center;
 }
-
 h1 {
     font-size: 30px;
 }
-
 h3 {
     font-size: 20px;
     text-align: center;
 }
-
 h4 {
-    font-size: 18px;
+    font-size: 20px;
+    padding: 15px;
     font-weight: bold;
 }
-
-body {
-    margin: 0px;
-    padding: 0px;
-}
-
-#home-text, #home-img {
+.row-1 {
     grid-row-start: 1;       
     grid-row-end: 1;  
 }
-
-#physical-text, #physical-img {
+.row-2  {
     grid-row-start: 2;       
     grid-row-end: 2;  
 }
-
-#mental-text, #mental-img {
+.row-3  {
     grid-row-start: 3;       
     grid-row-end: 3;  
 }
-
-#outside-text, #outside-img {
+.row-4 {
     grid-row-start: 4;       
     grid-row-end: 4;  
 }
-
-#skip {
-    margin: 10px;
-}
-
-#menu {
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    list-style: none;
-}
-
-#menu li {
-    grid-column: span 1;
+nav {
+    margin-top: 25px;
+    margin-bottom: 25px;
     text-align: center;
 }
-
-#health-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+nav li {
+    display: inline;
+    list-style: none;
+    text-align: center;
+    margin: auto;
 }
-
-#life-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
 #logo {
     width: 100px;
 }
-
+body{
+    margin: 0;
+    padding: 0;
+}
 footer {
     background-color: #00274C;
+    font-family: "IBM Plex Sans", sans-serif;
     text-align: center;
     color: white;
-    padding: 35px;
+    padding: 25px;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto;
+    }
 }
