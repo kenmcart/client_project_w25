@@ -23,6 +23,7 @@ footer a:link, footer a:visited, footer a:hover, footer a:active{
 
 *{
     font-family: "IBM Plex Sans", sans-serif;
+    line-height: 1.5;
 }
 
 a {
@@ -70,6 +71,16 @@ header .selected {
     text-align: left;
     vertical-align: middle;
     overflow: scroll;
+}
+
+.textbox-full {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    max-height: 600px;
+
+    text-align: left;
+    vertical-align: middle;
+    overflow: hidden;
     margin: auto;
 }
 
@@ -126,10 +137,19 @@ h4 {
     grid-row-start: 4;       
     grid-row-end: 4;  
 }
+.row-5 {
+    grid-row-start: 5;       
+    grid-row-end: 5;  
+}
+.row-6 {
+    grid-row-start: 6;       
+    grid-row-end: 6;  
+}
 nav {
     margin-top: 25px;
     margin-bottom: 25px;
     text-align: center;
+    line-height: 1.5;
 }
 nav li {
     display: inline;
