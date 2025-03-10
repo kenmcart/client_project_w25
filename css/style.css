@@ -76,7 +76,7 @@ header .selected {
 .textbox-full {
     grid-column-start: 2;
     grid-column-end: 2;
-    max-height: 600px;
+    max-height: 750px;
 
     text-align: left;
     vertical-align: middle;
