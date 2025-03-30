@@ -42,7 +42,7 @@
             <div class="row-2 imgbox">
                 <img src="images/MCOMMONS-WinterSemester2025-29.jpg" alt="Outside of the Duderstadt Center">
             </div>
-            <div class="row-3 textbox-full">
+            <div class="textbox-full">
                 <h2>Drop-in Academic Success Coaching</h2>
                 <p>Drop-in Academic Success Coaching is a service for students which allows them to meet one-on-one with a Graduate Academic Success Intern to discuss important academic skills such as:</p>
                 <ul>
@@ -51,7 +51,7 @@
                     <li>General time management</li>
                 </ul>
             </div>
-            <div class="row-4 textbox-full">
+            <div class="textbox-full">
                 <h2>Other Resources</h2>
                 <ul>
                     <li><a href = "https://caps.umich.edu/individual-peer-counseling">Sweetland Writing Center</a> | Sweetland provides students with help on essays or other writing assignments.</li>
@@ -65,9 +65,15 @@
     <footer>
         <p>UMSI Academic Success Team | <a href="https://www.si.umich.edu/student-experience/academic-success/about-academic-programs-and-student-life-team">About </a></p> <br> <br>
         <p>School of Information University of Michigan <br> <br>
-            105 S State St. Ann Arbor, MI 48109-1285
+            105 S State St. Ann Arbor, MI 48109-1285 <br> <br> <br>
+
+            © Copyrights <span id="year"></span> by UMSI. All rights reserved.
         </p>
     </footer>
+
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 
 </html>

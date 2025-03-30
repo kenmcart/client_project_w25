@@ -117,13 +117,27 @@
             </div>
             <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
             UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
+
+            <form class="textbox-full" action="https://formspree.io/f/xqapklpb" method="POST">
+                <h2> Have any questions? Contact us here! </h2>
+                <p> Please include your email so we can get back to you as soon as possible.</p>
+                <label> Your email: <input type="email" name="email" required> </label> <br> <br>
+                <label> Your question: <textarea name="message" required></textarea> </label> <br> <br>
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </main>
-    <footer id="footer">
+    <footer>
         <p>UMSI Academic Success Team | <a href="https://www.si.umich.edu/student-experience/academic-success/about-academic-programs-and-student-life-team">About </a></p> <br> <br>
         <p>School of Information University of Michigan <br> <br>
-            105 S State St. Ann Arbor, MI 48109-1285
+            105 S State St. Ann Arbor, MI 48109-1285 <br> <br> <br>
+
+            © Copyrights <span id="year"></span> by UMSI. All rights reserved.
         </p>
     </footer>
+
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>
